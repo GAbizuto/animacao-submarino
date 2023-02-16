@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animação para </title>
+	<style>
+		#imagem {
+			position: absolute;
+			left: 0px;
+			top: 600px;
+			animation: mover 10s linear forwards;
+		}
+
+		@keyframes mover {
+			0% {
+                left: 0px;
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+			100% {
+                left: 1300px;
+                opacity: 0;
+            }
+		}
+        .container {
+        position: relative;
+        width: 200px;
+        height: 700px;
+        }
+
+        .bolha {
+        position: absolute;
+        bottom: 0;
+        animation: subir 6s ease-in-out forwards;
+        }
+        .bolha2 {
+        position: absolute;
+        left: 1000px;
+        bottom: 0;
+        animation: subir 6s ease-in-out forwards;
+        }
+
+        @keyframes subir {
+        from { bottom: 0;
+                opacity: 0; 
+        }
+        to { bottom: 100%;
+        opacity: 1;}
+        }
+	 </style>
+</head>
+<body>
+	<img id="imagem" src="SUBMARINO.png" width="150" height="150" alt="Imagem animada" />
+    <div id="texto"></div>
+    <div class="container">
+        <img src="bolhas.png" class="bolha">
+        <img src="bolhas.png" class="bolha2">
+      </div>
+</div>
+
+
+        
+
+   
+</body>
+</html>
